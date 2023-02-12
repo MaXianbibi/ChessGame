@@ -2,7 +2,7 @@ NAME		=	ChessGame
 
 CXX			=	c++
 
-CXXFLAGS	=	-lsfml-graphics -lsfml-window -lsfml-system  
+CXXFLAGS	=	-lsfml-graphics -lsfml-window -lsfml-system -g
 
 # LFLAGS		= 	 
 

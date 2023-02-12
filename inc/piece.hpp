@@ -6,7 +6,7 @@
 /*   By: justinmorneau <justinmorneau@student.42    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/10 19:06:42 by justinmorne       #+#    #+#             */
-/*   Updated: 2023/02/10 21:31:27 by justinmorne      ###   ########.fr       */
+/*   Updated: 2023/02/11 20:39:15 by justinmorne      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,12 +29,12 @@ public:
     sf::Vector2i Position;
     int mask;
 
+    bool isPick;
+
     void drawSpirte( void );
-
     void operator=(const sf::Vector2i &tmp);
-
-
-    void setPosition( void );
+    bool isPickable(const sf::Vector2i &mousePos);
+    void setPosition( sf::Vector2i mousePos );
 
 };
 
